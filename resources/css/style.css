@@ -1,0 +1,212 @@
+/* for rem to work you need to have it in 'html' not in 'body' otherwise it does not... */
+html{
+  font-size: 14px; /* 14px = 0.875rem  the math: 44rem * 14px = (616px) * .875 = 539px  ---- common base  16px = 1rem (base) */
+}
+
+body{
+  color: #333;
+  background-color: #fff;
+  /* background-color: blue; */
+}
+
+h2{
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #555;
+}
+h3{
+  font-size: 1.3rem;
+  font-weight: bold;
+    color: #444;
+}
+
+.image-container {
+  overflow: hidden;
+}
+/* nav
+nav{
+  font-family: 'Open Sans', sans-serif;
+}*/
+/* .navbar {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: #5cb85c;
+} */
+
+/* jumbotron */
+.jumbotron{
+  height: 44rem; /* 539px */
+  padding-top: 10rem ; /* 122.5px */
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: 2px 2px 0 #000;  /* h-shadow v-shadow blur color */
+}
+.jumbotron h1{
+  font-family: 'Monoton', cursive;
+  font-size: 7.1rem;/* 86.975px */
+}
+.jumbotron p {
+  max-width: 51.3rem;
+  margin: auto;
+}
+.background-bike {
+  background-image: url("../images/jumbotron-bike.jpg");
+}
+
+.background-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+}
+
+.background-flowers {
+  background-image: url("../images/jumbotron-flowers.jpg");
+}
+
+.background-duffel {
+  background-image: url("../images/jumbotron-bg.jpg");
+}
+.btn-primary { /* new - study - box-shadow transition*/
+  width: 160px;
+  padding: 1.3rem 0;
+  border: 0;
+  margin-top: 2.8rem;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  transition: .5s box-shadow;
+}
+.btn-primary:hover { /* new - study */
+  background-color: #399bd1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+.btn-bottom {
+    width: 160px;
+    padding: 1.3rem 0;
+    border: 0;
+    margin: 2.8rem 0;
+        background-color: #40b0b0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    transition: .5s box-shadow;
+    color: #fff;
+  }
+  .btn-bottom:hover { /* new - study */
+    background-color: #449d44;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  }
+/* .btn-primary:active {
+box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+} */
+.relative-wrapper { /* for the button. not in the jumbotron div */
+  position: relative;/* need this for top: -16rem */
+  top: -16rem;
+  width: 100%;
+  /* margin-top: 40px; */
+  text-align: center;
+}
+
+/* featured section */
+
+/* .featured{
+  margin-top: -7rem;
+} */
+
+.featured img{
+  width: 100%;
+}
+
+.featured ul{
+  list-style: none;
+}
+
+.featured .image-container{
+  height: 19rem;
+  margin-top: 20px;
+}
+
+/* projects section */
+.projects .image-container{
+  height: 13rem;
+  margin-top: 20px;
+}
+
+.projects {
+  margin-bottom: 5.85rem;
+}
+
+/* footer section */
+.help {
+  padding: 8.2rem 0;
+  background-color: #e0f3fc;
+  text-align: center;
+}
+
+.image-container img { /* new - study */
+  opacity: 0.7;
+  transition: transform .5s,
+  opacity .5s;
+  transition: transform .5s,
+  opacity .5s;
+}
+
+.image-container img:hover { /* new - study */
+  opacity: 1;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* added by me */
+body {
+   padding-top: 0;
+}
+
+hr{
+ background-color: #ccc; height: 1px; border: 0;
+}
+/* .navbar{
+ border-radius: 0;
+ margin-bottom: 0;
+} */
+.business-header{
+ background-attachment: fixed;
+ background-size: cover;
+}
+.active{
+      background-color: #eee;
+}
+
+/* .navbar-toggle .icon-bar {
+
+    background: #438743;
+} */
+a {
+    color: #438743;
+    text-decoration: none;
+}
+/* ended added by me */
+
+
+@media (min-width: 1200px){
+  .container {
+    width: 1170px;
+  }
+}
+
+
+@media (max-width: 768px){
+  /* .navbar-default .navbar-collapse, .navbar-default .navbar-form > img {
+    display:none
+  } */
+  #hid{
+    display:none
+  }
+    .jumbotron h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 4.2rem;
+
+  }
+}

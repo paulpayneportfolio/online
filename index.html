@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paul Payne</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" /> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+    <!-- favicon -->
+  <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="resources/css/slick.css">
+<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<style>
+
+.navbar{
+    margin-bottom: 0px;
+      text-align: center;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+/* this is how you modify the nav bar */
+
+
+/* .dropdown-menu {
+    background-color: #3e86d8;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #3a5fa8;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+} */
+
+.active{
+      background-color: #eee;
+}
+.btn{
+  color: #fff;
+}
+.btn-aqua{
+  color: #fff;
+  background-color: #40b0b0;
+  border-color: #4b9e9e;
+}
+.btn.active.focus, .btn.active:focus, .btn.active:hover, .btn:active.focus, .btn:active:focus, .btn:active:hover, .open>.dropdown-toggle.btn.focus, .open>.dropdown-toggle.btn:focus, .open>.dropdown-toggle.btnn:hover {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+.btn-aqua.active.focus, .btn-aqua.active:focus, .btn-aqua.active:hover, .btn-aqua:active.focus, .btn-aqua:active:focus, .btn-aqua:active:hover, .open>.dropdown-toggle.btn-aqua.focus, .open>.dropdown-toggle.btn-aqua:focus, .open>.dropdown-toggle.btn-aqua:hover {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+
+@media (min-width: 768px){
+.navbar {
+  border-radius: 0;
+}
+.featured{
+  padding-bottom: 50px;
+}
+
+}
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+}
+
+.navbar-nav>li>a {
+  margin-left: 0;
+}
+}
+footer{
+padding-top: 2px;
+text-align: center;
+    font-size: .93em;
+}
+
+.nav-padding{
+  margin-left: 40px;
+}
+.btn:hover {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+.th {
+    line-height: 0;
+    display: inline-block;
+    border: solid 4px white;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+.th:hover, .th:focus {
+    -webkit-box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
+}
+
+.col {
+    padding-bottom: 2rem;
+}
+ul.bullets{
+  list-style-type: disc;
+  margin-left: -25px;
+}
+.gray{
+  color: #aaa;
+}
+.dkgray{
+  color: #777;
+}
+</style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-default" id="top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://visuallyrefreshing.com/online_now">Paul Payne</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav center">
+          <li><a href="#about" class="nav-padding">About me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="http://visuallyrefreshing.webflow.io/">Webflow</a></li> -->
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Information <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://visuallyrefreshing.com/about">About Me</a></li>
+              <li><a href="http://visuallyrefreshing.com/contact">Contact</a></li>
+            </ul>
+          </li> -->
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+
+  <!-- jumbotron slick carousel -->
+  <div class="carousel">
+
+    <div class="jumbotron background-duffel">
+      <div class="container-fluid">
+        <h1>GET CREATING.</h1>
+        <p>I like to fuel my creative. Today's the day for the next big idea.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative-wrapper">
+    <a href="#here" class="btn btn-aqua btn-lg cta">Jump to Portfolio</a>
+  </div>
+
+  <!-- end of the jumbotron -->
+
+
+  <!-- featured projects -->
+  <div class="featured container">
+    <div class="row">
+      <div class="col col-xs-12"  id="about">
+        <h2 class="top">About me</h2>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-xs-12  col-md-6">
+        <h3>My name is Paul Payne</h3>
+        <p>
+        An award-winning graphic designer, based in Dallas-Fort Worth, with a bachelor of arts in Visual Communications and an associate of science in Computer Science.
+        </p>
+
+        <p>
+          Always ready to deliver first class marketing materials for clients in a broad range of industries, with over a decade of experience in
+          developing engaging and innovative digital and print designs.
+        </p>
+        <!-- <div class="image-container">
+          <img src="resources/images/featured-project.png" alt="">
+        </div> -->
+      </div>
+
+      <div class="col col-xs-12  col-md-3">      <!-- id="hid" -->
+        <h3>Professional Skills</h3>
+        <ul class="bullets">
+          <li>Print and digital design</li>
+          <li>Corporate Branding</li>
+          <li>Hand-drawing/Illustration</li>
+          <li>Managed Art Department</li>
+          <li>Generated presentations</li>
+          <li>Strong conceptual solutions</li>
+        </ul>
+        </div>
+        <div class="col col-xs-12  col-md-3">      <!-- id="hid" -->
+          <h3>Computer Skills</h3>
+          <ul class="bullets">
+            <li>Macintosh and PC platforms</li>
+            <li>Photoshop</li>
+            <li>Illustrator, InDesign</li>
+            <li>InDesign</li>
+            <li>HTML, CSS, Figma, Atom </li>
+            <li>Microsoft Office</li>
+          </ul>
+          </div>
+      </div>
+    </div>
+
+    <!-- other projects -->
+    <div class="projects container">
+      <div class="row">
+        <div class="col col-xs-12"   id="portfolio">
+          <h2 id="here">Portfolio</h2>
+          <hr>
+        </div>
+
+      </div>
+        <h3>Print</h3>
+
+        <!-- start of icons  -->
+                <div class="row" id="photo">
+
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                    <a href="resources/images/1.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item1.png" alt="">
+                      </a>
+                        <!-- <h2>Photo #1</h2>
+                        <p>These marketing boxes are a great place to put some information.-->
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                      <a href="resources/images/2.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item2.png" alt=""></a>
+                        <!-- <h2>Photo #2</h2>
+                        <p>The images are set to be circular and responsive.   -->
+                      </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3"  data-aos="fade-right">
+                        <a href="resources/images/3.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item3.png" alt=""></a>
+                        <!-- <h2>Photo #3</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus.  -->
+                      </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                        <a href="resources/images/4.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item4.png" alt=""></a>
+                        <!-- <h2>Photo #3</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. -->
+                      </div>
+                </div>
+
+
+                <div class="row" id="photo">
+
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3"    data-aos="fade-right">
+                    <a href="resources/images/5.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item5.png" alt="">
+                      </a>
+                        <!-- <h2>Photo #1</h2>
+                        <p>These marketing boxes are a great place to put some information.-->
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                      <a href="resources/images/6.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item6.png" alt=""></a>
+                        <!-- <h2>Photo #2</h2>
+                        <p>The images are set to be circular and responsive.   -->
+                      </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3"  data-aos="fade-right">
+                        <a href="resources/images/7.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item7.png" alt=""></a>
+                        <!-- <h2>Photo #3</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus.  -->
+                      </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                        <a href="resources/images/8.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item8.png" alt=""></a>
+                        <!-- <h2>Photo #3</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. -->
+                      </div>
+                </div>
+                <!-- <hr> -->
+        <h3>Web</h3>
+        <div class="row" id="photo">
+
+            <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3"    data-aos="fade-right">
+            <a href="resources/images/11.jpg" class="th html5lightbox">
+                <img class="img-responsive img-center" src="resources/images/item9.png" alt="">
+              </a>
+                <!-- <h2>Photo #1</h2>
+                <p>These marketing boxes are a great place to put some information.-->
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+              <a href="resources/images/12.jpg" class="th html5lightbox">
+                <img class="img-responsive img-center" src="resources/images/item10.png" alt=""></a>
+                <!-- <h2>Photo #2</h2>
+                <p>The images are set to be circular and responsive.   -->
+              </div>
+            <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3"  data-aos="fade-right">
+                <a href="resources/images/13.jpg" class="th html5lightbox">
+                <img class="img-responsive img-center" src="resources/images/item11.png" alt=""></a>
+                <!-- <h2>Photo #3</h2>
+                <p>Donec id elit non mi porta gravida at eget metus.  -->
+              </div>
+            <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                <a href="resources/images/14.jpg" class="th html5lightbox">
+                <img class="img-responsive img-center" src="resources/images/item12.png" alt=""></a>
+                <!-- <h2>Photo #3</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. -->
+              </div>
+        </div>
+                <!-- <hr> -->
+
+                <div class="row" id="photo">
+
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3"    data-aos="fade-right">
+                    <a href="resources/images/15.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item13.png" alt="">
+                      </a>
+                        <!-- <h2>Photo #1</h2>
+                        <p>These marketing boxes are a great place to put some information.-->
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                      <a href="resources/images/16.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item15.png" alt=""></a>
+                        <!-- <h2>Photo #2</h2>
+                        <p>The images are set to be circular and responsive.   -->
+                      </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3"  data-aos="fade-right">
+                        <a href="resources/images/17.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item16.png" alt=""></a>
+                        <!-- <h2>Photo #3</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus.  -->
+                      </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                        <a href="resources/images/18.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/item17.png" alt=""></a>
+                        <!-- <h2>Photo #3</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. -->
+                      </div>
+                </div>
+                <!-- <hr> -->
+        <h3>Concepts</h3>
+                <div class="row" id="photo">
+
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3"    data-aos="fade-right">
+                    <a href="resources/images/con_just.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/c_just.png" alt="">
+                      </a>
+                        <!-- https://www.figma.com/proto/Df0ByGDN13HIwD7wq4hxrg/interior-decor?node-id=0%3A1&scaling=min-zoom   -->
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                      <a href="resources/images/con_sas.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/c_sas.png" alt=""></a>
+                        <!-- https://www.figma.com/proto/qEP8Gv9RZtPT6uNYphDAV5/SAS?node-id=0%3A1&scaling=min-zoom   -->
+                      </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3"  data-aos="fade-right">
+                        <a href="resources/images/con_smoothie.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/c_fresh.png" alt=""></a>
+                        <!-- https://www.figma.com/proto/f7KNXFOOp31D5tCzQka9ET/Fruit?scaling=min-zoom  -->
+                      </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="fade-right">
+                        <a href="resources/images/con_space.jpg" class="th html5lightbox">
+                        <img class="img-responsive img-center" src="resources/images/c_space.png" alt=""></a>
+                        <!-- https://www.figma.com/proto/uQuuOOb0JS5ToejTurVvOz/space?scaling=min-zoom  -->
+                      </div>
+                </div>
+                <!-- <hr> -->
+
+                <!-- <div class="container-fluid pull-right">
+                    <h2><strong><a href="http://www.visuallyrefreshing.com/slide/slider/" class="gray"> > Preview portfolio</a></strong></h2>
+
+                  </div> -->
+
+  </div>
+
+
+
+    <!-- footer learn more -->
+    <div class="container-fluid help"  id="contact">
+        <h1><strong>Get in Touch.</strong></h1>
+        <p>Like to hire me or just have a chat?</p>
+<p><a href="mailto:someone@yoursite.com?subject=Mail%20from%20My%20Site"  class="dkgray"> → Either way, I look forward to hearing from you. ← </a></p>
+        <a href="#top" class="btn btn-bottom btn-lg">Back to the Top</a>
+                  <p>© Copyright 2019 - Proudly built using BootStrap</p>
+      </div>
+
+
+
+
+
+  <script type="text/javascript" src="resources/js/jquery.js"></script>
+
+  <script type="text/javascript">
+    $('a[href*="#"]').on('click', function (el) {
+    el.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 500, 'linear');
+    });
+  </script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="resources/js/slick.min.js"></script>
+  <script src="resources/js/main.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+  <!-- lightbox
+  <script type="text/javascript" src="html5lightbox/jquery.js"></script>-->
+  <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+
+
+
+<script>
+document.write('<script src=js/vendor/' +
+('__proto__' in {} ? 'zepto' : 'jquery') +
+'.js><\/script>')
+</script>
+
+<script src="resources/js/zepto.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
